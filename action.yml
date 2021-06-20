@@ -1,0 +1,15 @@
+name: 'GH-ACTION-JEST-COVERAGE'
+description: 'Check coverage'
+inputs:
+  source-branch:
+    description: 'The source branch'
+    required: true
+  target-branch:
+    description: 'The target branch'
+    required: true
+outputs:
+  isSuccess:
+    description: 'The result'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
