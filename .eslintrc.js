@@ -3,9 +3,9 @@ module.exports = {
   env: {
     node: true,
     es6: true,
+    jest: true,
     // "browser": true,
     // mocha: true,
-    // jest: true,
     // jquery: true
   },
   globals: {},
