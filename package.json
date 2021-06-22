@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=development node src/index.js",
     "build": "rimraf dist/ && ncc build src/index.js --license licenses.txt",
     "lint": "eslint --ext .js",
     "lint:fix": "eslint --ext .js --fix",
@@ -34,6 +35,7 @@
     "@commitlint/config-conventional": "^12.1.4",
     "@vercel/ncc": "^0.28.6",
     "babel-jest": "^27.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
